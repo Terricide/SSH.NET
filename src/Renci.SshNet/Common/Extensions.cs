@@ -18,6 +18,7 @@ namespace Renci.SshNet.Common
     /// </summary>
     internal static partial class Extensions
     {
+#if !NET20
         /// <summary>
         /// Determines whether the specified value is null or white space.
         /// </summary>
@@ -37,6 +38,7 @@ namespace Renci.SshNet.Common
 
             return true;
         }
+#endif
 
         internal static byte[] ToArray(this ServiceName serviceName)
         {
